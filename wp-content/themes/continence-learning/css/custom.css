@@ -1,0 +1,311 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+@font-face {
+  font-family: Museo Slab;
+  src: url("../fonts/Museo_Slab_500.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: Museo Sans;
+  src: url("../fonts/Museo_Sans_500.otf") format("opentype");
+  font-display: swap;
+}
+.navbar {
+  background-color: #3e5b64;
+  padding: 20px 0;
+}
+.navbar-brand > img {
+  max-width: 200px;
+}
+.nav-item.nav-link {
+  color: #fff;
+  font-family: Museo Slab, Arial, sans-serif;
+}
+.hero {
+  background-color: #0e2329;
+  padding: 50px 0;
+  /* margin-top: 80px; */
+  margin-top: 35px;
+}
+.hero h1,
+.hero h2 {
+  color: #84a9b1;
+}
+.hero h1 {
+  font-family: Museo Slab, Arial, sans-serif;
+  font-size: clamp(30px, 5vw, 50px);
+}
+.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.hero button,
+.discoverLearningOptions button {
+  outline: none;
+  background-color: #1c7b44;
+  border: none;
+  width: 170px;
+  height: 50px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s;
+  font-size: clamp(16px, 2.5vw, 18px);
+}
+.hero button:hover,
+.discoverLearningOptions button:hover {
+  background-color: #25a55b;
+}
+.continenceEssentials__container {
+  background-color: #f1f5f8;
+}
+.continenceEssentials__texts {
+  padding: 50px 0;
+}
+.continenceEssentials__texts h1,
+.continenceEssentials__texts h2 {
+  color: #5b9dce;
+  font-family: Museo Sans, Arial, sans-serif;
+}
+.continenceEssentials__texts h1 {
+  font-size: 30px;
+}
+.continenceEssentials__texts h2 {
+  font-size: 20px;
+}
+.continenceEssentials__texts h2 > a {
+  color: inherit;
+}
+.industry {
+  padding: 50px 0;
+}
+.industry h1 {
+  color: #84a8b0;
+  font-family: Museo Sans, Arial, sans-serif;
+}
+.industry__card__container {
+  box-shadow: 0 2px 24px 1px #b0c8dc;
+  background-color: #f2f8fd;
+  width: fit-content;
+}
+.industry__card__title__container {
+  padding: 10px;
+  color: #5b9dce;
+}
+.industry__card__title__container p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.carousel-inner {
+  background-color: #84a8b0;
+  padding: 50px;
+  color: #fff;
+}
+.testimonial__message {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(16px, 2.5vw, 22px);
+}
+.testimonial__name__container {
+  font-family: Museo Sans, Arial, sans-serif;
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+.testimonial__slider__container {
+  background-color: #84a8b0;
+  margin-bottom: 50px;
+}
+.chooseContinence {
+  background-color: #ecf3f4;
+  padding: 0 0 50px 0;
+  color: #84a8b0;
+}
+.chooseContinence__title {
+  font-family: Museo Sans, Arial, sans-serif;
+}
+.chooseContinence__reason__container {
+  font-family: "Open Sans", sans-serif;
+}
+.chooseContinence__reason__container h1 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.discoverLearningOptions {
+  background-color: #445a63;
+  padding: 100px 12px;
+  text-align: center;
+  color: #fff;
+}
+.discoverLearningOptions h1 {
+  font-family: Museo Slab, Arial, sans-serif;
+}
+footer {
+  background-color: #0f2328;
+  color: #84a8b0;
+  padding: 50px 0;
+}
+.footer__brand__logo {
+  background-color: #fff;
+  padding: 15px;
+  width: fit-content;
+}
+.footer__contactNumber__container {
+  border: 1px solid #f5a71c;
+  padding: 30px;
+}
+.footer__contactNumber__container h1 {
+  font-family: Museo Slab, Arial, sans-serif;
+  font-size: 30px;
+}
+.footer__contactNumber__container h2 {
+  color: #f5a71c;
+  font-family: Museo Slab, Arial, sans-serif;
+}
+.footer__links__container a {
+  color: inherit;
+  font-family: Museo Slab, Arial, sans-serif;
+}
+.footer__brand__text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.industry__card__container img {
+  aspect-ratio: 3/2;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("../images/hero-illustration.webp");
+    background-position: center;
+    background-size: cover;
+  }
+  .hero h1,
+  .hero h2 {
+    max-width: 25ch;
+  }
+  .carousel-inner {
+    padding: 50px 100px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .container-fluid {
+    padding: 15px 100px;
+  }
+  .isLoginLink {
+    background-color: #1c7b44;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: 700;
+    margin: 0 auto;
+    transition: all 0.3s;
+  }
+  .isLoginLink:hover {
+    background-color: #25a55b;
+  }
+  .navbar__loginbtn__container p {
+    display: flex;
+    color: #84a8b0;
+    font-family: "Open Sans", sans-serif;
+  }
+  .hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    /* margin-top: 120px; */
+    margin-top: 85px;
+  }
+  .industry {
+    padding: 100px 0 250px 0;
+  }
+  .industry h1 {
+    max-width: 25ch;
+  }
+  .chooseContinence {
+    position: relative;
+    padding: 300px 0 200px 0;
+  }
+  .testimonial__slider__container {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero h2 {
+    max-width: 40ch;
+  }
+  .hero button {
+    width: 190px;
+  }
+  .continenceEssentials__texts h2 {
+    max-width: 45ch;
+  }
+  .carousel-inner {
+    padding: 50px 150px;
+  }
+  .chooseContinence__title {
+    margin-bottom: 150px;
+  }
+  .footer__brand__logo img {
+    max-width: 75%;
+  }
+  .industry__card__container {
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .industry__card__container img {
+    transition: all 0.3s;
+  }
+  .industry__card__container img:hover {
+    transform: scale(1.1);
+  }
+  .underline-hover {
+    transition: all 0.3s;
+  }
+  .underline-hover:hover {
+    color: #3985bd;
+  }
+}
